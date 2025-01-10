@@ -30,10 +30,10 @@ Let’s start off by defining the Subscription object. Each of the Subscription 
 | name   |  type | is required? |
 |--------|-------|-------|
 |userId|String|yes|
-|asin|||
-|quantity|||
-|monthlyFrequency|||
-|nextShipmentMonth|||
+|asin|Int|yes|
+|quantity|Int|yes|
+|monthlyFrequency|String|yes|
+|nextShipmentMonth|String|no|
 
 For this operation, we’ll define the URI as /subscriptions/users/{userId}/products/{asin} and use the PUT verb. 
 - Why do you think we should use PUT here instead of a POST?
